@@ -7,16 +7,18 @@
 /*
  * My Approach: Brute Force
  * 
- * Complexity Analysis
+ * Algorithm: https://leetcode.com/problems/two-sum/solution/
  * 
- * Time complexity : O(n^2). For each element, we try to find its complement by looping through 
+ * Complexity Analysis:
+ * 
+ * Time complexity: O(n^2). For each element, we try to find its complement by looping through 
  * the rest of array which takes O(n) time. Therefore, the time complexity is O(n^2).
  * 
- * Space complexity : O(1).
+ * Space complexity: O(1).
  */
 
 // @lc code=start
-class Solution {
+class MySolution {
     public int[] twoSum(int[] nums, int target) {
         int[] index = new int[2];
         outer: for (int i = 0; i < nums.length; i++) {
@@ -39,15 +41,15 @@ class Solution {
  * 
  * Complexity Analysis:
  * 
- * Time complexity : O(n). We traverse the list containing n elements only once.
+ * Time complexity: O(n). We traverse the list containing n elements only once.
  * Each look up in the table costs only O(1) time.
  * 
- * Space complexity : O(n). The extra space required depends on the number of
+ * Space complexity: O(n). The extra space required depends on the number of
  * items stored in the hash table, which stores at most nn elements.
  */
 
 // @lc code=start
-class Solution {
+class BestSolution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
