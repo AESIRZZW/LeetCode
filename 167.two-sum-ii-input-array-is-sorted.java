@@ -9,10 +9,10 @@
  * 
  * Complexity Analysis:
  * 
- * Time complexity: O(n^2). For each element, we try to find its complement by looping through 
+ * Time Complexity: O(n^2). For each element, we try to find its complement by looping through 
  * the rest of array which takes O(n) time. Therefore, the time complexity is O(n^2).
  * 
- * Space complexity: O(1).
+ * Space Complexity: O(1).
  */
 
 // @lc code=start
