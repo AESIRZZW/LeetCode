@@ -69,12 +69,11 @@ class MySolution {
 // @lc code=start
 class BestSolution1 {
     public List<List<Integer>> threeSum(int[] nums) {
-        // Two Pointers pattern requires the array to be sorted.
         Arrays.sort(nums);
         List<List<Integer>> triplets = new ArrayList<>();
         // If the current value is greater than zero, break from the loop. Remaining
         // values cannot sum to zero.
-        for (int i = 0; i < nums.length || nums[i] <= 0; i++) {
+        for (int i = 0; i < nums.length && nums[i] <= 0; i++) {
             // If the current value is the same as the one before, skip it.
             if (i == 0 || nums[i - 1] != nums[i]) {
                 // Otherwise, call twoSumII for the current position i.
